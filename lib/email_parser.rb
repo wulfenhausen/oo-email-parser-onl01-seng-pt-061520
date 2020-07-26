@@ -6,11 +6,11 @@ class EmailAddressParser
   attr_accessor :name, :emails
   
   def initialize(email_addresses)
-    @emails = email_addresses
+   # @emails = email_addresses
   end
   
   def parse
-   parsedemails = @emails.split.collect {|emails| emails.split (',')}
+  parsedemails = @emails.split.collect {|emails| emails.split (',')}
   parsed  = parsedemails.flatten.uniq
    parsed
   end
